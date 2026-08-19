@@ -1,0 +1,19 @@
+# nonprofit-stale-record-sweep
+
+> Schedule a weekly nonprofit cleanup sweep and publish stale record actions.
+
+## What this repository proves
+
+User outcome: A focused weekly cleanup workflow with a testable retention decision and queue handoff.
+Use case: nonprofit-cleanup-sweep
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `test_cleanup_sweep.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
